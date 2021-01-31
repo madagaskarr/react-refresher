@@ -1,7 +1,7 @@
 import React from "react";
-import './ParagraphList.css'
+import './ParagraphListComponent.css'
 
-const ParagraphList = props => {
+const ParagraphListComponent = props => {
     return (
         <div className="ParagraphList">
             <ul>
@@ -15,4 +15,4 @@ const ParagraphList = props => {
     );
 }
 
-export default ParagraphList;
+export default ParagraphListComponent;

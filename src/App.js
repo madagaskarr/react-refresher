@@ -1,5 +1,6 @@
 import './App.css'
-import ParagraphList from "./components/ParagraphList";
+import ParagraphListComponent from "./components/ParagraphList/ParagraphListComponent";
+import SubmitComponent from "./components/SubmitComponent/SubmitComponent"
 import React from "react";
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
   return (
     <div className="App">
       <h1>Tigran Ghazinyan</h1>
-        <ParagraphList listItems={myArray}/>
+      <ParagraphListComponent listItems={myArray}/>
+      <SubmitComponent />
     </div>
   );
 }
