@@ -1,10 +1,16 @@
 import React from "react";
 import './SubmitComponent.css'
 
-const SubmitComponent = () => {
+const SubmitComponent = props => {
 
     const addGoalHandler = (event) => {
         event.preventDefault()
+
+        const newAddition = {
+            id: Math.random().toString(),
+            text: "New text"
+        }
+        props.onNewItemAdded(newAddition);
     };
 
     return (
