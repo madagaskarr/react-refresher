@@ -17,7 +17,11 @@ const App = () => {
     ]);
 
     const handleAddition = (newArrayElement) => {
-        myCustomHandler(myArray.concat(newArrayElement));
+
+        // Updates based on prevoius state
+        myCustomHandler((previousArray) => {
+            return previousArray.concat(newArrayElement);
+        });
     };
 
   return (
